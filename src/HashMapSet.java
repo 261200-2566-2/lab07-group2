@@ -45,5 +45,8 @@ public class HashMapSet<E> implements Set<E>{
         return new Object[0];
     }
 
+    public boolean equal (Object o){
+
+    }
 
 }
