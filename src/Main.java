@@ -5,17 +5,18 @@ import java.util.Collection;
 public class Main {
     public static void main(String[] args) {
         HashMapSet map=new HashMapSet();
-        HashMapSet map2=new HashMapSet();
 
-
+        System.out.println("Add 1 banana and true");
         map.add(1);
         map.add("banana");
         map.add(true);
-        map2.add(2);
-        System.out.println(map.contains("banana"));
-        System.out.println(map.contains(1));
-
-        System.out.println(map.contains(2));
+        System.out.println("Contains banana : " + map.contains("banana"));
+        map.remove(1);
+        System.out.println("(Remove 1) Contains 1 : " + map.contains(1));
+        System.out.println("Size : " + map.size());
+        System.out.println("Contains 2 : " + map.contains(2));
+        map.clear();
+        System.out.println("(Clear) Is this map empty : " + map.isEmpty());
 
     }
 }
